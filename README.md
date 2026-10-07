@@ -19,7 +19,7 @@ An advanced, enterprise-grade quantitative machine learning framework designed f
 ### 1. Vector Discomfort Index (Linear Algebra)
 Instead of processing raw time anomalies linearly, the engine projects the departure and arrival delays into a continuous 2D coordinate system. It calculates the normalized Euclidean distance from an ideal ground schedule relative to the overall flight distance, automatically scaling the "stress factor" based on short-haul vs. long-haul flight physics:
 
-\[\text{Vector\_Discomfort\_Index} = \frac{\sqrt{\Delta t_{\text{dep}}^2 + \Delta t_{\text{arr}}^2}}{t_{\text{ground\_ideal}} + t_{\text{flight}}}\]
+SS\[\text{Vector\_Discomfort\_Index} = \frac{\sqrt{\Delta t_{\text{dep}}^2 + \Delta t_{\text{arr}}^2}}{t_{\text{ground\_ideal}} + t_{\text{flight}}}\]SS
 
 ### 2. Complex Variable Phase-Space (Complex Analysis / TFFP)
 Temporal delays are vectorized onto a 2D complex plane (\(Z = X + iY\)). The engine extracts the modulus (amplitude of stress) and the phase angle (argument). A phase shift past \(45^\circ\) mathematically informs the classifiers that final destination delays are overriding terminal waiting distress:
