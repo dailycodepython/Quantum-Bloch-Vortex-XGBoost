@@ -9,7 +9,7 @@ Instead of processing raw time anomalies linearly, the engine projects the depar
 ### 2. Complex Variable Phase-Space (Complex Analysis / TFFP)
 Temporal delays are vectorized onto a 2D complex plane \(Z = X + iY\). The engine extracts the modulus (amplitude of stress) and the phase angle (argument). A phase shift past \(45^\circ\) mathematically informs the classifiers that final destination delays are overriding terminal waiting distress:
 
-\[Z_{\text{stress}} = \frac{\Delta t_{\text{dep}}}{t_{\text{flight}}} + i \cdot \frac{\Delta t_{\text{arr}}}{t_{\text{flight}}}\]
+$\[Z_{\text{stress}} = \frac{\Delta t_{\text{dep}}}{t_{\text{flight}}} + i \cdot \frac{\Delta t_{\text{arr}}}{t_{\text{flight}}}\]$
 
 \[\text{Stress\_Phase\_Deg} = \text{deg}(\arg(Z_{\text{stress}}))\]
 
